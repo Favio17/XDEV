@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C8uYRBfIQVqRP9YkRPYBHF1zISsweXaSMMAaOsyfXp8AWONsPMU2BKXz3lulad/VOTrPvGYofT00JB86tZCCJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\favio\\Documents\\Entrevistas\\XDEV\\XDEV-001-FRONT\\XDEV-001-FRONT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\favio\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

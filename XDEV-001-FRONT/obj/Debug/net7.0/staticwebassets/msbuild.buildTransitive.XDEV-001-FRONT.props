@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\XDEV-001-FRONT.props" />
+</Project>

@@ -1,0 +1,34 @@
+﻿@model List<XDEV_001_FRONT.Models.ProductoViewModel>
+
+<h2>Productos</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Stock</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model)
+            {
+                <tr>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Precio</td>
+                    <td>@producto.Descripcion</td>
+                    <td>@producto.Stock</td>
+              
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay productos disponibles.</p>
+}
