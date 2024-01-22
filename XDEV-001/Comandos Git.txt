@@ -1,0 +1,7 @@
+--- CREAR RAMA A PARTIR DE OTRA
+
+git checkout [RamaBase]
+
+git checkout -b [NombreRamaNueva] [RamaBase]
+
+git push origin [NombreRamaNueva]

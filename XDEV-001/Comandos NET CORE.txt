@@ -1,0 +1,10 @@
+-- INSTALAR WORKER SERVICE COMO WINDOWS SERVICE
+
+https://www.youtube.com/watch?v=wxYPG3n5XsU
+
+sc create [Name Service] binpath="[Ruta del Servicio]"
+sc description [Name Service] "[Descripción]"
+
+-- GENERAR SCAFFOLD AND DBCONTEXT
+
+Scaffold-DbContext "Server=DESKTOP-PD8ILTM\\SQLEXPRESS;Database=RTMDB;Encrypt=false;Integrated Security=True;MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Entities

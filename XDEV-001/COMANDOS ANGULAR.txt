@@ -1,0 +1,68 @@
+-------------- INSTALAR ANGULAR
+
+- Instalar Node JS: Versión LTS
+- Instalar Angular CLI
+npm i @angular/cli
+
+-------------- COMANDOS NODE JS
+
+- Ver los paquetes instalados en Node JS
+npm list -g
+
+- Desinstalar paquete
+npm uninstall [PackageName]
+
+- Desinstalar paquete globalmente
+npm uninstall -g [PackageName]
+
+- Versión NPM
+npm -v
+
+- Versión NodeJS
+node -v
+
+-------------- COMANDOS ANGULAR
+
+- Instalar Angular
+npm install -g @angular/cli
+
+- Crear aplicación
+ng new [App Name]
+
+- Ejecutar aplicación
+cd [App Name Folder]
+ng serve --o   	(Abre la aplicación directamente en el navegador)
+ng server	(Ejecuta el servidor, pero no abre la app en el navegador)
+
+-- Extensiones
+https://www.youtube.com/watch?v=g5FWBl_PG8k&ab_channel=Pa%C3%BAlReyes
+
+- Abrir en code
+cd [App Name folder]
+Abrir CMD
+code .
+Ya se puede utilizar la aplicación desde VS Code
+
+- Crear componente
+ng generate component [Nombre Componente]
+ng g c [NombreComponente]
+
+- Variables
+[Nombre Variable]:[Tipo Variable] = [Valor Variable]
+
+Arrays:
+[NombreVariable]:[TipoVariable][] = []
+
+- Variable de Plantilla
+<input type="text" placeholder="Ingresa tu nombre" class="form-control" #name>  // #[Nombre del Elemento / Variable de plantilla]
+
+- DIRECTIVAS
+*ngIF = "[Condición]"
+*ngIF = "[Condición]; else [Instrucciones]"
+*ngFor = " let [Variable para el ciclo] of [Nombre de la Lista]"
+*ngFor = " let [Variable para el ciclo] of [Nombre de la Lista]; let i = index"         // Para saber el numero de iteración
+
+- [ngSwitch] = "[Nombre Variable]"
+    *ngSwitchCase = "[Valor de la Variable que deseemos]" || "'[Valor variable si son strings]'"
+    *ngSwitchDefault        /// Valor por defecto
+

@@ -1,0 +1,28 @@
+-- DOCKER FILE
+
+# Use the .NET 7.0 ASP.NET runtime image as the base image
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
+WORKDIR /App
+
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /App
+COPY --from=build-env /App/out .
+ENTRYPOINT ["dotnet", "RTMS.dll"]
+
+-- CREATE IMAGE WITH DOCKER FILE
+docker build -t [Name Image] -f [Name DockerFile] .
+
+-- CREATE CONTAINER WITH IMAGE CREATED
+docker run -d -p 8080:80 --name [Name Container] [Name Image]
+
+
+--- NOTAS
+* Colocar el dockerfile en la carpeta root del proyecto, dónde se encuentre el archivo .csproj del proyecto

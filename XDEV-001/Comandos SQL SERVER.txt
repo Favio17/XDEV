@@ -1,0 +1,5 @@
+------------------------ RESETEAR EL AUTO INCREMENTABLE A 0
+
+DELETE FROM NombreTabla;
+
+DBCC CHECKIDENT ('NombreTabla', RESEED, 0);
